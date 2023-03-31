@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#restart {
+    width: 100%;
+    height: 80%;
+    display: none;
+}
+
+button {
+    margin: 10%;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+#game {
+    /* width: 70%;
+    height: 80%; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+section {
+    padding: 5px 0;
+}
+
+.morpion {
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.morpionCase {
+    width: 100px;
+    height: 100px;
+
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.morpionCase:nth-child(3n) { border-right: none; }
+.morpionCase:nth-child(6) ~ .morpionCase { 
+    border-bottom: none; 
+}
+
+#turn {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* #turn p {
+    font-size: 20px;
+    font-weight: bold;
+} */
